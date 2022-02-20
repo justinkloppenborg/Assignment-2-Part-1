@@ -26,7 +26,7 @@ SECRET_KEY = 'r9_w&l0*##-ed#1x9n+y78sk4z2n237l3&f+5fxo&jhx0^4vdw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -155,3 +155,7 @@ CORS_ORIGIN_WHITELIST = (
 )
 
 CORS_ORIGIN_ALLOW_ALL = True
+
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+LOGIN_REDIRECT_URL = '/'
